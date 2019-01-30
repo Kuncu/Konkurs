@@ -1,0 +1,44 @@
+<!doctype HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <div id="alert">
+            
+        </div>
+            <img src="wykrzyknik.jpg" id="alert_s" onclick="fc_alert()" width="100" height="100">
+        
+        <script>
+            
+            var alert_showed=false;
+            function fc_alert()
+            {
+                //document.getElementById("alert_s").innerHTML+="ff";
+               // document.getElementById("alert").innerHTML=alert_showed;
+                alert_showed=true;
+            }
+            function show_alert()
+            {
+                document.getElementById("alert").style.backgroundColor="blue";
+                document.getElementById("alert").style.width="500px";
+                document.getElementById("alert").style.height="500px";
+            }
+            function hide_alert()
+            {
+                document.getElementById("alert").style.backgroundColor="red";
+                document.getElementById("alert").style.width="50px";
+                document.getElementById("alert").style.height="50px";
+            }
+            switch(alert_showed)
+                {
+                    case true:
+                    show_alert();
+                    break;
+                    case false:
+                    hide_alert();
+                    break;
+                }
+            
+        </script>
+    </body>
+</html>
