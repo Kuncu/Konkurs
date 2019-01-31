@@ -1,0 +1,25 @@
+<!doctype HTML>
+<html>
+<head>
+</head>
+<body>
+	<div id="block" onmouseover="mouse_on()" onmouseout="mouse_out()">
+		TEKST TAKI DOBRY ŻE AŻ FAJNY
+	</div>
+	<script>
+		var a;
+		function mouse_on()
+		{
+			document.getElementById("block").style.fontSize="30px";
+			document.getElementById("block").style.color="red";
+			document.getElementById("block").style.transition= "color 0.5s";
+			
+		}
+		function mouse_out()
+		{
+			document.getElementById("block").style.fontSize="15px";
+			document.getElementById("block").style.color="blue";
+		}
+	</script>
+</body>
+</html>
